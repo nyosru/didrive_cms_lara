@@ -13,14 +13,31 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
+     * Связанная с моделью таблица.
+     *
+     * @var string
+     */
+    // protected $table = 'gm_user';
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
+
         'name',
         'email',
         'password',
+
+        'avatar',
+        'socset',
+        'socset_id',
+
+        'bd',
+        'login_soc',
+        'access'
+
     ];
 
     /**

@@ -78,6 +78,14 @@
         <main class="py-4">
             @yield('content')
         </main>
+        
     </div>
 </body>
+
+<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js" ></script>
+
+@section('js')
+@show
+
+
 </html>
